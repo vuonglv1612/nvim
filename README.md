@@ -3,7 +3,7 @@ My nvim configuration
 
 ## Installation
 ## Install dependencies
-1. cmake: `sudo apt install cmake python3-venv -y`
+1. cmake: `sudo apt install cmake python3-venv xclip -y`
 ## Install Neovim
 https://github.com/neovim/neovim/wiki/Installing-Neovim
 1. Download neovim: `curl -fsSL https://github.com/neovim/neovim/releases/download/v0.9.0/nvim-linux64.tar.gz -o nvim-linux64.tar.gz`
