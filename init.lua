@@ -19,6 +19,7 @@ if not vim.loop.fs_stat(lazypath) then
   }
 end
 vim.opt.rtp:prepend(lazypath)
+vim.g.coq_settings = { auto_start = 'shut-up' }
 
 -- PLUGINS
 require('lazy').setup({
@@ -27,7 +28,6 @@ require('lazy').setup({
 
 require("buffer_manager").setup({ })
 require("mason").setup()
-vim.g.coq_settings = { auto_start = 'shut-up' }
 local coq = require("coq")
 local lsp_on_attach = function(_, bufnr)
   -- NOTE: Remember that lua is a real programming language, and as such it is possible
